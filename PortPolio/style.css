@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  user-select: none;
+  font-family: "Kanit", sans-serif;
+}
+.background{
+    /* background-image: url(./Images/bg.jpg); */
+    background-image:url(./Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.center{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.titles{
+  font-weight: bold;
+  padding-top: 50px;
+  font-size: 2rem;
+}
+.sub-para{
+  color: white;
+}
+.sub-parab{
+  color: black;
+}
+.line{
+  color: black;
+  height: 2px;
+  border-bottom: 1px solid grey;
+}
+.bg-orangered{
+  background:orangered;
+}
+
+.header{
+  color: black;
+  height: 70px;
+  /* border-bottom: 1px solid grey; */
+}
+.titlecap{
+color: orangered;
+}
+.navlist{
+  color: black;
+font-weight: bold;
+}
+.navlist a:hover{
+color:orangered;
+cursor: pointer;
+font-weight: bold;
+transition: 0.2s;
+}
+.logo{
+  color: black;
+  font-weight:bold;
+}
+.nav-btn{
+  color: white;
+  background-color: orangered;
+}
+
+.nav-btn:hover{
+ transition: 0.3s;
+ background: black;
+ color: white;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* Hero Section */
+.hero-sec{
+  height: 91vh;
+}
+.hero-btn{
+color: white;
+background: orangered;
+}
+.hero-btn:hover{
+  background: black;
+  color: white;
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+#element{
+color: orangered;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .header{
+border-bottom: 0px;   
+  }
+}
+
+/* Section2 */
+.skills{
+  color: black;
+}
+.skills-title,.skills-sub{
+  color: white;
+}
+
+.section-2nd{
+  background: orangered;
+  color: white;
+}
+
+
+/* Skills Section */
+
+.text-orange{
+  color: orangered;
+}
+
+.bg-gray-100:hover{
+transform: scale(0.9);
+transition: 0.3s;
+}
+
+
+/* social section */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 5px 5px;
+    height: 82vh;
+}
+
+.social .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #f3eadf 0%, white 100%);
+    border-radius: 20px;
+    transition: 0.5s;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+}
+
+.social .card:hover {
+    height: 320px;
+    cursor: pointer;
+}
+
+.social .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.social .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.social .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.social .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.social .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.social .card .content p {
+    color: #333;
+}
+
+.social .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.social .card .content a:hover {
+    opacity: 0.8;
+}
+
+/* section-3rd from here */
+.section-3rd{
+  color: black;
+}
+
+.sumbit{
+  background: orangered;
+transition: 0.5s;
+}
+.submit:hover{
+  background: black;
+  color: white;
+}
+
+@media (max-width: 480px) {
+    .social .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .social .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .social .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .social .card .content a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 850px) {
+  .social{
+    height: 150vh;
+  }
+}
